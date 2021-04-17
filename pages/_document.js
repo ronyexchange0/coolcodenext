@@ -16,7 +16,8 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {/* <script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script> */}
+          <script type="text/javascript" dangerouslySetInnerHTML={{__html: `var subscribersSiteId='c3303d50-f772-40a0-8bb7-9d93eb8ebada';`}}></script>
+          <script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script>
         </body>
       </Html>
     )

@@ -15,9 +15,3 @@ function MyApp({ Component, pageProps, router}) {
 }
 
 export default MyApp
-
-
-export const getStaticProps = async () => {
-  const subscribersSiteId='c3303d50-f772-40a0-8bb7-9d93eb8ebada';
-}
-
