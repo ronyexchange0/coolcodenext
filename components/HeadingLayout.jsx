@@ -72,7 +72,7 @@ const HeadingLayout = ({
 
 
                         <motion.div 
-                        className={styles.content}
+                        className={`${styles.content} ${square ? styles.square : ""} `}
                         variants={isLeft ? fadeLeft("100px", .5) : fadeLeft("-100px", .5)}
                         >
 
@@ -151,7 +151,7 @@ const HeadingLayout = ({
                                 </Link>
                             </div>
                         ) : (
-                            <div className={`${styles.image} col-lg-5 order-1 order-lg-2`} ref={img} >
+                            <div className={`${styles.image} ${square ? styles.square : ""} col-lg-5 order-1 order-lg-2`} ref={img} >
 
                                 
                                 <div className="position-relative overflow-hidden">

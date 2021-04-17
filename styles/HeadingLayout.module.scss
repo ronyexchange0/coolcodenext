@@ -14,7 +14,7 @@
         padding: 160px 0 100px 140px;
         border-image-slice: 1;
         @media (max-width: $xl) {
-            padding: 120px 0 100px 80px;
+            padding: 140px 0 100px 80px;
         }
     
         @media (max-width: $lg) {
@@ -23,6 +23,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-end;
+        }
+
+        @media (max-width: $md) {
+            padding: 140px 0 60px;
         }
 
         h1 {
@@ -80,7 +84,16 @@
             a {
                 font-weight: 700;
             }
+        }
 
+        &.square {
+            @media (max-width: $lg) {
+                padding: 120px 0 60px;
+            }
+
+            @media (max-width: $md) {
+                padding: 100px 0 60px;
+            }
         }
     }
     
@@ -93,15 +106,17 @@
             position: static;
             transform: translateY(0);
             width: 70%;
-            margin: 0 auto -132px;
+            margin: 0 auto -100px;
         }
 
         @media (max-width: $lg) {
             position: static;
             transform: translateY(0);
-            margin: 0 auto -132px;
+            margin: 0 auto -100px;
             width: 60%;
         }
+
+       
 
         .cover {
             background-color: #000;
@@ -112,6 +127,19 @@
             height: 110%;
             z-index: 10000;
             transform: translateZ(0px) scaleY(1.4) scaleX(1.1);
+        }
+
+        &.square {
+            @media (max-width: $lg) {
+                margin: 0 auto -85px;
+            }
+            @media (max-width: $sm) {
+                margin: 0 auto -60px;
+            }
+
+            @media (max-width: "400px") {
+                width: 80%;
+            }
         }
     }
 
@@ -124,13 +152,12 @@
             }
 
             @media (max-width: $lg) {
-                padding: 60px 0 140px;
+                padding: 140px 0 100px ;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-
-        
+     
             .textWrapper {
                 overflow: hidden;
                 margin-bottom: $s-xs;
@@ -160,14 +187,29 @@
                 @media (max-width: $md) {
                     width: 70%;
                 }
+            }
 
-               
+            &.square {
+                @media (max-width: $lg) {
+                    padding: 120px 0 60px;
+                }
+                
+                @media (max-width: $md) {
+                    padding: 100px 0 60px;
+                }
             }
         }
         
         .image {
             right: "auto";
             left: 0;
+
+            &.square {
+                @media (max-width: "400px") {
+                    width: 80%;
+                }
+            }
+            
         }
     }
 
