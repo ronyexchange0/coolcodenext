@@ -16,7 +16,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script>
+          {/* <script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script> */}
         </body>
       </Html>
     )
