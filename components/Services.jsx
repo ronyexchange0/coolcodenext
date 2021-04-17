@@ -56,13 +56,13 @@ const Services = ({services, isH1 = false}) => {
                             isH1 ? (
                             
                                 <motion.h1 variants={textSlideUp(.5 , .2)}>
-                                    How we help your coffee shop
+                                    How we help your business
                                 </motion.h1> 
                             
                             ) : (
                                 
                                 <motion.h2 variants={textSlideUp(.5 , .2)}>
-                                    How we help your coffee shop
+                                    How we help your business
                                 </motion.h2>
                             )
                         }
