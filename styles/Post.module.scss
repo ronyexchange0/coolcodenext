@@ -1,0 +1,87 @@
+@import "Theme.module.scss";
+
+.post {
+    margin-bottom: $s-lg;
+
+    span.num {
+        font-size: 144px;
+        background: $main-color;
+        -webkit-text-fill-color: transparent !important;
+        -webkit-background-clip: text !important;
+        font-family: $secondary-font;
+        display: inline-block;
+    }
+
+    h3 {
+        color: $secondary-color;
+        font-family: $main-font;
+        font-weight: $f-main;
+        font-size: $f-h3;
+        margin-bottom: 0;
+    }
+
+    p {
+        color: $secondary-color;
+        font-family: $main-font;
+        font-weight: $f-main;
+        font-size: $f-md;
+        letter-spacing: 0.1em;
+        opacity: .8;
+        margin-bottom: 0;
+    }
+
+    .imgWrapper {
+        padding-top: 120px;
+
+        
+        .imgInner {
+            position: relative;
+
+            .svgWrapperRight {
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                padding-bottom: 100%;
+                vertical-align: middle; 
+                overflow: hidden; 
+                left: -100px;
+                top: -100px
+            }
+
+            .svgWrapperLeft {
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                padding-bottom: 100%;
+                vertical-align: middle; 
+                overflow: hidden; 
+                right: -100px;
+                top: -100px
+            }
+            
+            @media (min-width: $lg) and (max-width: $xl) {
+                width: 70%;
+            }
+
+            .cover {
+                background-color: #000;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 110%;
+                z-index: 10000;
+                transform: translateZ(0px) scaleY(1.4) scaleX(1.1);
+            }
+            
+        }
+
+    }
+
+    //later delete and make component
+    .textWrapper {
+        overflow: hidden;
+        margin-bottom: $s-xs;
+    }
+    
+}

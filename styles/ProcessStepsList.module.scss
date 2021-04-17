@@ -1,0 +1,10 @@
+@import "./Theme.module.scss";
+
+.processStepsList {
+    padding-top:$s-lg;
+    padding-bottom: $s-lg;
+    @media (max-width: $md) {
+        padding-top: $s-xs;
+        padding-bottom: $s-xs;
+    }
+}

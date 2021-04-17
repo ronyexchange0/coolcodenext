@@ -1,0 +1,50 @@
+@import "./Theme.module.scss";
+
+.callToAction {
+
+    padding-bottom: $s-xxl;
+    text-align: center;
+    @media (max-width: $lg) {
+        padding-bottom: $s-lg;
+    }
+
+
+    h2 {
+        font-family: $secondary-font;
+        background: $main-color;
+        -webkit-text-fill-color: transparent !important;
+        -webkit-background-clip: text !important;
+        font-size: 120px;
+        @media (max-width: $lg) {
+            font-size: 80px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 48px;
+        }
+
+    }
+
+    p {
+        font-family: $main-font;
+        color: $secondary-color;
+        font-size: $f-md;
+        width: 50%;
+        margin: 0 auto $s-xs;
+        letter-spacing: 0.1em;
+        @media (max-width: $md) {
+            font-size: $f-xxs;
+            width: 80%;
+        }
+
+        @media (max-width: $xl) {
+            width: 80%;
+        }
+    }
+
+    //later delete and make component
+    .textWrapper {
+        overflow: hidden;
+        margin-bottom: $s-sm;
+    }
+}

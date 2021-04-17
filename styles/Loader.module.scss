@@ -1,0 +1,58 @@
+@import "./Theme.module.scss";
+
+.loader {
+    
+    .whiteFrame {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(134.67deg, #B38728 -4.11%, #FBF5B7 18.14%, #BF953F 41.89%, #FCF6BA 61.42%, #BF953F 92.95%);;
+        z-index: 100000000;
+    }
+
+    .blackFrame {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        z-index: 200000000;
+    }
+
+    .logoWrapper {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top:0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000000000000000;
+        
+        .logoWrapperLeft {
+            width: 400px;
+            transform: translateX(115px);
+            @media (max-width: $md) {
+                width: 200px;
+            }
+            @media (max-width: 380px) {
+                width: 100px;
+            }
+        }
+    
+        .logoWrapperRight {
+            width: 400px;
+            transform: translateX(-115px);
+            @media (max-width: $md) {
+                width: 200px;
+            }
+            @media (max-width: 380px) {
+                width: 100px;
+            }
+        }
+    }
+}

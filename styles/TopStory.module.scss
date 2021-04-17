@@ -1,0 +1,104 @@
+@import './Theme.module.scss';
+
+.topStory {
+    height: calc(100vh - 120px);
+    overflow-x: hidden;
+    @media (max-width: $lg) {
+        height: auto;
+    }
+
+    .bg {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-image: url("/assets/bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        @media (max-width: $lg) {
+            background-image: url("/assets/bgM.jpg");
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        @media (max-width: $md) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $dark-color;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $dark-color;
+            opacity: .8;
+        }
+        
+        .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            @media (max-width: $lg) {
+                align-items: center;
+            }
+
+            h1 {
+                background: $main-color;
+                -webkit-text-fill-color: transparent !important;
+                -webkit-background-clip: text !important;
+                font-family: $secondary-font;
+                font-size: $f-h1;
+                width: fit-content;
+                letter-spacing: 5px;
+                @media (max-width: $sm) {
+                    font-size: $f-h3;
+                }
+            }
+
+            p {
+                color: $secondary-color;
+                font-family: $main-font;
+                font-size: $f-ssm;
+                margin-bottom: $s-md;
+                width: 50%;
+                letter-spacing: 0.1em;
+
+                @media (max-width: $sm) {
+                    font-size: $f-xxs;
+                    margin-bottom: $s-xs;
+                }
+                
+                @media (max-width: $lg) {
+                    text-align: center;
+                    width: 80%;
+                }
+
+                
+                span {
+                    font-weight: 700;
+                }
+
+                .noBold {
+                    font-weight: 400;
+                }
+            }
+
+        }
+
+    }
+
+}

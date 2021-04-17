@@ -1,0 +1,224 @@
+@import "./Theme.module.scss";
+
+.headingLayout {
+    margin-bottom: $s-xl;
+    &:last-of-type {
+        margin-bottom: 0 !important;
+    }
+
+    .content {
+        border: 10px solid;
+        border-width: 1px;
+        border-image-source: $main-color;
+        min-height: 100%;
+        padding: 160px 0 100px 140px;
+        border-image-slice: 1;
+        @media (max-width: $xl) {
+            padding: 120px 0 100px 80px;
+        }
+    
+        @media (max-width: $lg) {
+            padding: 150px 0 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        h1 {
+            background: $main-color;
+            -webkit-text-fill-color: transparent !important;
+            -webkit-background-clip: text !important;
+            font-family: $secondary-font;
+            font-size: $f-h3;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            display: inline-block;
+            @media (max-width: $md) {
+                font-size: $f-mmd;
+            }
+        }
+
+        h2 {
+            background: $main-color;
+            -webkit-text-fill-color: transparent !important;
+            -webkit-background-clip: text !important;
+            font-family: $secondary-font;
+            font-size: $f-h3;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            display: inline-block;
+            @media (max-width: $md) {
+                font-size: $f-mmd;
+            }
+        }
+
+        h3 {
+            color: $secondary-color;
+            font-family: $main-font;
+            font-weight: $f-main;
+            font-size: $f-h3;
+            @media (max-width: $md) {
+                font-size: $f-mmd;
+            }
+        }
+    
+        p {
+            width: 70%;
+            font-family: $main-font;
+            font-size: $f-md;
+            letter-spacing: 0.1em;
+            color: $secondary-color;
+            @media (max-width: $lg) {
+                width: 80%;
+            }
+            @media (max-width: $md) {
+                width: 70%;
+                font-size: $f-xxs;
+            }
+
+            a {
+                font-weight: 700;
+            }
+
+        }
+    }
+    
+    .image {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (max-width: $md) {
+            position: static;
+            transform: translateY(0);
+            width: 70%;
+            margin: 0 auto -132px;
+        }
+
+        @media (max-width: $lg) {
+            position: static;
+            transform: translateY(0);
+            margin: 0 auto -132px;
+            width: 60%;
+        }
+
+        .cover {
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 110%;
+            z-index: 10000;
+            transform: translateZ(0px) scaleY(1.4) scaleX(1.1);
+        }
+    }
+
+    &.isLeft {
+
+        .content {
+            padding: 160px 0 100px 260px;
+            @media (max-width: $xl) {
+                padding: 120px 0 100px 200px;
+            }
+
+            @media (max-width: $lg) {
+                padding: 60px 0 140px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        
+            .textWrapper {
+                overflow: hidden;
+                margin-bottom: $s-xs;
+                width: 90%;
+                @media (max-width: $lg) {
+                    width: 80%;
+                }
+                @media (max-width: $md) {
+                    width: 70%;
+                }
+            }
+
+            .buttonWrapper {
+                @media (max-width: $lg) {
+                    width: 80%;
+                }
+                @media (max-width: $md) {
+                    width: 70%;
+                }
+            }
+        
+            p {
+                width: 90%;
+                @media (max-width: $lg) {
+                    width: 80%;
+                }
+                @media (max-width: $md) {
+                    width: 70%;
+                }
+
+               
+            }
+        }
+        
+        .image {
+            right: "auto";
+            left: 0;
+        }
+    }
+
+
+    //later delete and make component
+
+    .numWrapper {
+        overflow: hidden;
+        width: 70%;
+        @media (max-width: $lg) {
+            width: 80%;
+        }
+        @media (max-width: $md) {
+            width: 70%;
+        }
+        
+        span {
+            font-size: 144px;
+            background: $main-color;
+            -webkit-text-fill-color: transparent !important;
+            -webkit-background-clip: text !important;
+            font-family: $secondary-font;
+            display: inline-block;
+            @media (max-width: $lg) {
+                font-size: 100px;
+            }
+            @media (max-width: $md) {
+                font-size: 80px;
+            }
+        }
+    }
+
+    .textWrapper {
+        overflow: hidden;
+        margin-bottom: $s-xs;
+        width: 70%;
+        @media (max-width: $lg) {
+            width: 80%;
+        }
+        @media (max-width: $md) {
+            width: 70%;
+        }
+    }
+
+    .buttonWrapper {
+        margin-top: 20px;
+        @media (max-width: $lg) {
+            width: 80%;
+        }
+        @media (max-width: $md) {
+            width: 70%;
+        }
+    }
+}

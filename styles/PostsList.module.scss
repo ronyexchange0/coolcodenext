@@ -1,0 +1,8 @@
+@import "./Theme.module.scss";
+
+.postsList {
+    padding-top: $s-xl;
+    @media (max-width: $md) {
+        padding-top: $s-lg;
+    }
+}

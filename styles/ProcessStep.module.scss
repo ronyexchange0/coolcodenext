@@ -1,0 +1,63 @@
+@import "./Theme.module.scss";
+
+.processStep {
+    margin-bottom: $s-xs;
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    .inner {
+        width: 90%;
+    
+        .heading {
+            display: flex;
+            align-items: center;
+            
+            .textWrapper {
+                overflow: hidden;
+
+                span {
+                    font-family: $secondary-font;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 60px;
+                    background: $main-color;
+                    -webkit-text-fill-color: transparent !important;
+                    -webkit-background-clip: text !important;
+                    margin-right: $s-xs;
+                    margin-top: 8px;
+                    display: inline-block;
+                    @media (max-width: $md) {
+                        font-size: $f-h3;
+                    }
+                }
+    
+                h3 {
+                    color: $secondary-color;
+                    font-family: $main-font;
+                    font-weight: $f-main;
+                    font-size: $f-h3;
+                    margin-bottom: 0;
+                    @media (max-width: $md) {
+                        font-size: $f-md;
+                    }
+                }
+
+            }
+
+        }
+
+        p {
+            color: $secondary-color;
+            font-family: $main-font;
+            font-weight: $f-main;
+            font-size: $f-ssm;
+            letter-spacing: 0.1em;
+            opacity: .8;
+            margin-bottom: 0;
+            @media (max-width: $md) {
+                font-size: $f-xxs;
+            }
+        }
+    }
+}

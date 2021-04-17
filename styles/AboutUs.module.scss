@@ -1,0 +1,34 @@
+@import "./Theme.module.scss";
+
+.aboutUs {
+    padding-top: $s-xxl;
+    padding-bottom: $s-lg;
+    @media (max-width: $md) {
+        padding-top: $s-xl;
+        padding-bottom: $s-md;
+    }
+
+    h1 {
+        font-size: $f-h1;
+        font-family: $secondary-font;
+        background: $main-color;
+        -webkit-text-fill-color: transparent !important;
+        -webkit-background-clip: text !important;
+        letter-spacing: 0.1em;
+        text-align: center;
+        text-transform: uppercase;
+        @media (max-width: $md) {
+            font-size: $f-h3;
+        }
+    }
+
+    //later delete and make component
+    .textWrapper {
+        overflow: hidden;
+        margin-bottom: $s-xl;
+        @media (max-width: $md) {
+            margin-bottom: $s-lg;
+        }
+    }
+
+}

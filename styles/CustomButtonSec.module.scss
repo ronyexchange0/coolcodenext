@@ -1,0 +1,21 @@
+@import "Theme.module.scss"; 
+
+.customButtonSec {
+    background-color: transparent;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    font-family: $main-font;
+    font-size: $f-sm;
+    padding: 2px 20px 4px;
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    letter-spacing: 0.1em;
+    font-weight: $f-main;
+    @media (max-width: $xl) {
+        font-size: $f-sm;
+    }
+
+    &:hover {
+        background-color: $secondary-color;
+        color: $dark-color;
+    }
+}

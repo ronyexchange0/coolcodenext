@@ -1,0 +1,80 @@
+@import "./Theme.module.scss";
+
+.loaderOnce {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 10000000;
+
+    // .logoWrapper {
+    //     display: flex;
+    //     justify-content: center;
+    //     padding-top: 100px;
+    //     margin-bottom: $s-md;
+
+    //     .logoWrapperLeft {
+    //         width: 400px;
+    //         transform: translateX(115px);
+    //         @media (max-width: $md) {
+    //             width: 200px;
+    //         }
+    //         @media (max-width: 380px) {
+    //             width: 100px;
+    //         }
+    //     }
+    
+    //     .logoWrapperRight {
+    //         width: 400px;
+    //         @media (max-width: $md) {
+    //             width: 200px;
+    //         }
+    //         @media (max-width: 380px) {
+    //             width: 100px;
+    //         }
+    //     }
+    // }
+
+    // h2 {
+    //     background: -webkit-linear-gradient(359.39deg, #B38728 -59.15%, #FBF5B7 -0.7%, #BF953F 61.74%, #FCF6BA 128.17%, #BF953F 195.92%);
+    //     background: linear-gradient(90.61deg, #B38728 -59.15%, #FBF5B7 -0.7%, #BF953F 61.74%, #FCF6BA 128.17%, #BF953F 195.92%);
+    //     -webkit-text-fill-color: transparent !important;
+    //     -webkit-background-clip: text !important;
+    //     font-family: $secondary-font;
+    //     font-size: $f-h1;
+    //     letter-spacing: .1em;
+    //     width: fit-content;
+    //     margin: 0 auto;
+    //     margin-bottom: 12px;
+    //     text-transform: uppercase;
+    //     @media (max-width: $md) {
+    //         font-size: $f-h3;;
+    //     }
+    //     @media (max-width: 380px) {
+    //         font-size: $f-lg;
+    //     }
+    // }
+
+    // p {
+    //     color: #e6e6e6;
+    //     font-family: $main-font;
+    //     font-size: 28px;
+    //     margin-bottom: $s-md;
+    //     text-align: center;
+    //     letter-spacing: 0.1em;
+    //     @media (max-width: $md) {
+    //         font-size: $f-sm;
+    //     }
+    //     @media (max-width: 380px) {
+    //         font-size: $f-xxs;
+    //     }
+    // }
+
+    .video {
+        width: 100%;
+        height: 100%;
+       
+    }
+}

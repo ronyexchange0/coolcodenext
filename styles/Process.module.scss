@@ -1,0 +1,48 @@
+@import './Theme.module';
+
+.process {
+    padding-top: $s-xxl;
+    padding-bottom: $s-xxl;
+    @media (max-width: $md) {
+        padding-top: $s-xl;
+        padding-bottom: $s-xl;
+    }
+
+
+    .heading {
+        text-align: center;
+
+        span {
+            color: $secondary-color;
+            font-family: $main-font;
+            font-weight: $f-main;
+            font-size: $f-md;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: inline-block;
+            @media (max-width: $md) {
+                font-size: $f-xxs;
+            }
+        }
+    
+        h2 {
+            font-size: $f-h2;
+            font-family: $secondary-font;
+            background: $main-color;
+            -webkit-text-fill-color: transparent !important;
+            -webkit-background-clip: text !important;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            @media (max-width: $md) {
+                font-size: $f-mmd;
+            }
+        }
+
+    }
+
+    //later delete and make component
+    .textWrapper {
+        overflow: hidden;
+        margin-bottom: $s-xs;
+    }
+}

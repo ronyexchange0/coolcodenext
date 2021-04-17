@@ -1,0 +1,76 @@
+@import "Theme.module.scss"; 
+
+.footer {
+    padding-top: $s-xxl;
+    padding-bottom: $s-xxl;
+    @media (max-width: $md) {
+        padding-top: $s-xl;
+        padding-bottom: $s-xl;
+    }
+
+    .footerWrapper {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: $md) {
+           flex-direction: column;
+        }
+
+        h2 {
+            font-size: $f-lg;
+            font-family: $secondary-font;
+            background: $main-color;
+            -webkit-text-fill-color: transparent !important;
+            -webkit-background-clip: text !important;
+            letter-spacing: 0.05em;
+            @media (max-width: $md) {
+                font-size: $f-mmd;
+            }
+        }
+
+        form {
+            width: calc(100% + 40px);
+            @media (max-width: $md) {
+                margin-bottom: $s-xl;
+                width: 100%
+            }
+        }
+
+        .socials {
+            @media (max-width: $xl) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            a {
+                @media (max-width: $md) {
+                    margin-bottom: $s-sm;
+                 }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+
+    p {
+        color: #e6e6e6;
+        font-family: "Darker Grotesque", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        opacity: .8;
+        margin-top: 20px;
+    }
+
+    //later delete and make component
+    .textWrapper {
+        overflow: hidden;
+        margin-bottom: $s-md;
+        @media (max-width: $md) {
+            margin-bottom: $s-sm;
+        }
+    }
+}

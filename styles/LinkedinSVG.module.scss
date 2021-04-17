@@ -1,0 +1,43 @@
+@import "./Theme.module.scss";
+
+///laater compoennt
+.textWrapper {
+    overflow: hidden;
+    display: inline-block;
+    @media (max-width: $xl) {
+        margin-bottom: $s-sm;
+    }
+}
+
+.socialWrapper {
+    margin-left: 32px;
+    width: 180px;
+    @media (max-width: $md) {
+        width: 167px;
+    }
+    
+    @media (max-width: $xl) {
+        margin-left: 0;
+    }
+    
+    .linkedinSVG .path1 {
+        stroke-width: 0;
+        fill: #E6E6E6;
+        opacity: 1;
+        transition: opacity 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    .linkedinSVG .path2 {
+        opacity: 0;
+        transition: opacity 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    } 
+    
+    .linkedinSVG:hover .path2 {
+        opacity: 1;
+    }
+    
+    .linkedinSVG:hover .path1 {
+        opacity: 0;
+    } 
+
+}

@@ -1,0 +1,35 @@
+@import "./Theme.module.scss";
+
+.success {
+    margin: 80px 0;
+    border: 10px solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(90.61deg, #B38728 -59.15%, #FBF5B7 -0.7%, #BF953F 61.74%, #FCF6BA 128.17%, #BF953F 195.92%);
+    min-height: 100%;
+    padding: 40px;
+    border-image-slice: 1;
+
+    h1 {
+        font-size: 40px;
+        font-family: "Rozha One", serif;
+        background: -webkit-linear-gradient(359.39deg, #B38728 -59.15%, #FBF5B7 -0.7%, #BF953F 61.74%, #FCF6BA 128.17%, #BF953F 195.92%);
+        background: linear-gradient(90.61deg, #B38728 -59.15%, #FBF5B7 -0.7%, #BF953F 61.74%, #FCF6BA 128.17%, #BF953F 195.92%);
+        -webkit-text-fill-color: transparent !important;
+        -webkit-background-clip: text !important;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        @media (max-width: $sm) {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        font-family: "Darker Grotesque", sans-serif;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        color: #e6e6e6;
+        @media (max-width: $sm) {
+            font-size: 16px;
+        }
+    }
+}

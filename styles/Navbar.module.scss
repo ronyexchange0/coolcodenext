@@ -1,0 +1,260 @@
+@import './Theme.module.scss';
+
+.header {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+
+    .navInner{
+        z-index: 100;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-top: $s-sm;
+        padding-bottom: $s-sm;
+        @media (max-width: $md) {
+            padding: $s-xs $s-xs $s-xs 16px
+        }
+
+        .logoWrapper {
+            width: 24%;
+            text-align: left;
+            @media (min-width: $lg) and (max-width: $xl) {
+                width: 12%;
+            }
+        
+            @media (max-width: $md) {
+                width: 100px;
+            }
+    
+            .logo {
+                width: 35%;
+                @media (min-width: $lg) and (max-width: $xl) {
+                    width: 80%;
+                }
+    
+                @media (max-width: $lg) {
+                    width: 80px;
+                }
+            }
+        }
+    
+    
+        .svgWrapper {
+            width: 32px;
+            position: absolute;
+            right: 0;
+            cursor:pointer;
+            z-index: 1000000;
+            @media (max-width: 768px) {
+                    margin-right: 20px;
+            }
+            svg {
+                line {
+                    stroke-width: 4px;
+                }
+    
+                .witeStroke {
+                    stroke: #fff
+                }
+                
+            }
+            
+        }
+    
+        .nav {
+            ul {
+                display: flex;
+                align-items: center;
+                padding-left: 0;
+                margin-bottom: 0;
+               
+    
+                li {
+                    padding-left: $s-lg / 2;
+                    padding-right: $s-lg / 2;
+                    list-style: none;
+    
+                    a {
+                        font-family: $main-font;
+                        font-size: $f-md;
+                        color: $secondary-color;
+                        letter-spacing: 0.1em;
+                        font-weight: $f-main;
+                    }
+                }
+            }
+        }
+    
+        .menu {
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            width: 0;
+            background-color: #fff;
+            z-index: 10000;
+    
+            .navMobile {
+                padding-top: 120px;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 0;
+                    margin-bottom: 0;
+        
+                    li {
+                        
+                        padding-left: $s-lg / 2;
+                        padding-right: $s-lg / 2;
+                        list-style: none;
+                        margin-bottom: $s-md;
+        
+                        a {
+                            font-family: $main-font;
+                            font-size: $f-md;
+                            letter-spacing: 0.1em;
+                            font-weight: $f-main;
+                            text-align: left;
+                            &:hover {
+                                color: #000
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .logoWrapper {
+            width: 20%;
+            text-align: left;
+            @media (min-width: $lg) and (max-width: $xl) {
+                width: 12%;
+            }
+        
+            @media (max-width: $md) {
+                width: 100px;
+            }
+    
+            .logo {
+                width: 35%;
+                @media (min-width: $lg) and (max-width: $xl) {
+                    width: 80%;
+                }
+    
+                @media (max-width: $lg) {
+                    width: 80px;
+                }
+            }
+        }
+    
+    
+        .svgWrapper {
+            width: 32px;
+            position: absolute;
+            right: 0;
+            cursor:pointer;
+            z-index: 1000000;
+            @media (max-width: 768px) {
+                    margin-right: 20px;
+            }
+            svg {
+                line {
+                    stroke-width: 4px;
+                }
+    
+                .witeStroke {
+                    stroke: #fff
+                }
+                
+            }
+            
+        }
+    
+        .nav {
+            ul {
+                display: flex;
+                align-items: center;
+                padding-left: 0;
+                margin-bottom: 0;
+    
+                li {
+                    padding-left: $s-lg / 2;
+                    padding-right: $s-lg / 2;
+                    list-style: none;
+    
+                    a {
+                        font-family: $main-font;
+                        font-size: $f-sm;
+                        color: $secondary-color;
+                        letter-spacing: 0.1em;
+                        font-weight: $f-main;
+                        @media (max-width: $xl) {
+                            font-size: $f-xs;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .menu {
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            width: 0;
+            background-color: #fff;
+            z-index: 10000;
+    
+            .navMobile {
+                padding-top: 120px;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 0;
+                    margin-bottom: 0;
+        
+                    li {
+                        
+                        padding-left: $s-lg / 2;
+                        padding-right: $s-lg / 2;
+                        list-style: none;
+                        margin-bottom: $s-md;
+        
+                        a {
+                            font-family: $main-font;
+                            font-size: $f-md;
+                            letter-spacing: 0.1em;
+                            font-weight: $f-main;
+                            text-align: left;
+                            &:hover {
+                                color: #000
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        
+    
+        .buttonWrapper {
+            width: 24%;
+    
+            @media (min-width: $lg) and (max-width: $xl) {
+                width: auto;
+            }
+        }
+        .buttonWrapper {
+            width: 24%;
+    
+            @media (min-width: $lg) and (max-width: $xl) {
+                width: auto;
+            }
+        }
+    
+    }
+
+}

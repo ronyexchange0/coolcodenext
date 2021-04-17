@@ -1,0 +1,10 @@
+@import "./Theme.module.scss";
+
+.contactForm {
+    padding-top: $s-xxl;
+    padding-bottom: $s-xxl;
+    @media (max-width: $md) {
+        margin-top: $s-xl;
+        margin-bottom: $s-md;
+    }
+}

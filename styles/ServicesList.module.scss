@@ -1,0 +1,10 @@
+@import './Theme.module';
+
+.servicesList {
+    padding-top: $s-xl;
+    padding-bottom: $s-xl;
+    @media (max-width: $md) {
+        padding-top: $s-md;
+        padding-bottom: $s-md;
+    }
+}

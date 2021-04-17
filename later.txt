@@ -1,0 +1,4 @@
+make menu a single component navbra.jsx
+create text wrapper component
+create image cover component
+make a utils file for getposts and getpost

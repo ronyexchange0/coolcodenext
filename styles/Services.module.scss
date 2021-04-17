@@ -1,0 +1,98 @@
+@import './Theme.module';
+
+.services {
+    padding-top: $s-xxl;
+    padding-bottom: $s-xxl;
+    @media (max-width: $md) {
+        padding-top: $s-xl;
+        padding-bottom: $s-xl;
+    }
+
+    .heading {
+        text-align: center;
+
+        .textWrapper {
+            margin-bottom: 0;
+            overflow: hidden;
+            span {
+                color: $secondary-color;
+                font-family: $main-font;
+                font-weight: $f-main;
+                font-size: $f-md;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                display: inline-block;
+                @media (max-width: $md) {
+                    font-size: $f-xxs;
+                }
+            }
+        }
+
+        .textWrapper:nth-child(2) {
+            margin-bottom: $s-xs;
+            overflow: hidden;
+            h1 {
+                margin-bottom: 0;
+                font-size: $f-h2;
+                font-family: $secondary-font;
+                background: $main-color;
+                -webkit-text-fill-color: transparent !important;
+                -webkit-background-clip: text !important;
+                text-transform: uppercase;
+                @media (max-width: $md) {
+                    font-size: $f-mmd;
+                }
+
+            }
+        }
+        
+        .textWrapper:nth-child(2) {
+            margin-bottom: $s-xs;
+            overflow: hidden;
+            h2 {
+                margin-bottom: 0;
+                font-size: $f-h2;
+                font-family: $secondary-font;
+                background: $main-color;
+                -webkit-text-fill-color: transparent !important;
+                -webkit-background-clip: text !important;
+                text-transform: uppercase;
+                @media (max-width: $md) {
+                    font-size: $f-mmd;
+                }
+            }
+        }
+        
+        .lineWrapper {
+            height: 200px;
+            overflow: hidden;
+
+            .vLine {
+                width: 1px;
+                height: 100%;
+                background-color: $secondary-color;
+                margin: 0 auto $s-xl;
+                @media (max-width: $md) {
+                    height: 100px;
+                }
+            }
+        }
+    
+    }
+    
+    .lineWrapper {
+        height: 200px;
+        overflow: hidden;
+
+        .vLine {
+            width: 1px;
+            height: 100%;
+            background-color: $secondary-color;
+            margin: 0 auto $s-xl;
+            @media (max-width: $md) {
+                height: 100px;
+            }
+        }
+    }
+
+}
