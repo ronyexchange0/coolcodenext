@@ -1,4 +1,3 @@
-import {useEffect, useState, useRef} from "react";
 import {AnimatePresence, motion} from "framer-motion";
 import Head from "next/head";
 
@@ -14,7 +13,7 @@ const Layout = ({ children, router }) => {
                 <link rel="shortcut icon" type="image/svg" href="/assets/logo.svg"/>
             </Head>
 
-            <LoaderOnce /> 
+            {/* <LoaderOnce />  */}
             
             <div className="app">
                 <AnimatePresence  exitBeforeEnter>

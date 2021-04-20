@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react"
 import { useInView } from 'react-intersection-observer';
-import ReactMarkdown from "react-markdown";
 import { motion, useViewportScroll, useAnimation, useTransform } from "framer-motion";
 import Image from "next/image";
 
@@ -11,7 +10,6 @@ import { getProject, getProjects } from "../../utils";
 import { fadeUp, textSlideUp, fadeLeft } from "../../animations";
 
 import styles from "../../styles/Project.module.scss";
-import SplitText from "../../components/SplitText";
 
 const Post = ({project}) => {
 

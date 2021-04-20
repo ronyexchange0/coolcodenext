@@ -1,0 +1,46 @@
+@import "./Theme.module.scss";
+
+.callBox {
+    padding: 40px 60px;
+    border: 10px solid;
+    border-width: 1px;
+    border-image-source: $main-color;
+    border-image-slice: 1;
+    text-align: center;
+
+    p {
+        text-align: center !important;
+    }
+
+    .title {
+        font-family: $main-font;
+        color: $secondary-color;
+        letter-spacing: 0.135em;
+        font-size: $f-md;
+        margin-bottom: 0 !important;
+    }
+
+    .titleP2 {
+        font-weight: bold;
+        margin-bottom: 0 !important;
+    }
+
+    .par {
+        font-family: $main-font;
+        color: $secondary-color;
+        letter-spacing: 0.135em;
+        font-size: $f-xs !important;
+        margin-bottom: 12px !important; 
+    }
+
+    .line {
+        margin: 32px auto;        
+        width: 70%;
+        height: 2px;
+        background: $main-color;
+    }
+
+    .textWrapper {
+        overflow: hidden;
+    }
+}

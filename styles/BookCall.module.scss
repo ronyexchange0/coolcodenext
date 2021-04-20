@@ -1,0 +1,28 @@
+@import "./Theme.module.scss";
+
+.bookCall {
+    border: 10px solid;
+    border-width: 1px;
+    border-image-source: $main-color;
+    border-image-slice: 1;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+
+    .logo {
+        margin-right: 40px;
+    }
+
+    .content {
+        text-align: left;
+
+        p {
+            font-family: $main-font;
+            font-weight: bold;
+            font-size: $f-md;
+            letter-spacing: 0.135em;
+            margin-bottom: 20px;
+        }
+    }
+
+}

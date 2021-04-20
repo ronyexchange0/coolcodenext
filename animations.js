@@ -204,27 +204,27 @@ return (
 )
 };
 
-export const menuItemsAnime = () => {
-return (
-    {
-        open: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                type: "tween",
-                ease: easing
-            }
-        },
-        closed: {
-            opacity: 0,
-            x: "-50px",
-            transition: {
-                type: "tween",
-                ease: easing
+export const menuItemsAnime = (x = "-50px") => {
+    return (
+        {
+            open: {
+                opacity: 1,
+                x: 0,
+                transition: {
+                    type: "tween",
+                    ease: easing
+                }
+            },
+            closed: {
+                opacity: 0,
+                x: x,
+                transition: {
+                    type: "tween",
+                    ease: easing
+                }
             }
         }
-    }
-)
+    )
 };
 
 export const menuStagger = () => {
@@ -576,12 +576,72 @@ export const textSlideUpSlider = (
 }
 
 // slider animaions end
+export const lineScale = (
 
+        delay = 0,
+        duration = .5, 
+        ease = easing, 
+        type = "tween"
 
-const stagger = {
-    animate: {
-        transition: {
-            staggerChildren: 0.1
+    ) => {
+            
+    return (
+        {
+            initial: {
+                scaleX: 0,
+                transition: {
+                    delay,
+                    duration,
+                    ease,
+                    type
+                }
+            },
+            animate: {
+                scaleX: 1,
+                transition: {
+                    delay,
+                    duration,
+                    ease: easing,
+                    type
+                }
+            }
         }
-    }
+    )
+}
+
+export const linksBoxStagger = (delay = 1.5) => {
+    return (
+        {
+            initial: {
+                transition: { staggerChildren: .2, delayChildren: delay }
+            },
+            animate: {
+                transition: { staggerChildren: .2, delayChildren: delay }
+            }
+        }
+    )
+    };
+
+export const linksBoxItems = () => {
+    return (
+        {
+            initial: {
+                y: 50,
+                opacity: 0,
+                transition: {
+                    ease: "easeInOut", 
+                    type: "tween"
+                }
+            },
+            animate: {
+                y: 0,
+                opacity: 1,
+                transition: {
+                    ease: "easeInOut", 
+                    type: "tween"
+                }
+            }
+        }
+    )
 };
+

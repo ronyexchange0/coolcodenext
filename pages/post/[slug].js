@@ -3,12 +3,18 @@
 // import { useInView } from 'react-intersection-observer';
 // import { motion, useAnimation } from "framer-motion";
 
+
 // import Meta from "../../components/Meta";
 // import HeadingLayout from "../../components/HeadingLayout";
 // import Loader from "../../components/Loader";
 // import { getArticle, getArticles } from "../../utils";
 // import PostsList from "../../components/PostsList";
 // import { fadeUp, textSlideUp } from "../../animations";
+// import LinksBox from "../../components/LinksBox";
+// import WhiteSpace from "../../components/WhiteSpace";
+// import CallBox from "../../components/CallBox";
+// import SocialShare from "../../components/SocialShare";
+// import BookCall from "../../components/BookCall";
 
 // import styles from "../../styles/ServicePage.module.scss";
 
@@ -61,16 +67,40 @@
 //                 initial="initial" 
 //                 animate={contentAnimation} 
 //                 ref={contentRef} 
-//                 className="row justify-content-center"
+//                 className="row"
 //                 >
 
-//                     <motion.div variants={fadeUp(1)} className={`${styles.content} col-md-10 col-lg-8 text-center`}>
-//                         <ReactMarkdown source={content} escapeHtml={false} />
+
+//                     <div className="col-1 align-self-center">
+//                         <SocialShare/>
+//                     </div>
+
+
+//                     <motion.div 
+//                     variants={fadeUp(1)} 
+//                     className={`${styles.content} col-md-9 col-lg-7 text-center`}>
+                    
+//                         <div style={{width: "90%"}}>
+//                             <ReactMarkdown source={content} escapeHtml={false} />
+//                         </div>
+                    
+//                     <BookCall/>
 //                     </motion.div>
+
+
+//                     <motion.div 
+//                     variants={fadeUp(1)} 
+//                     className={`${styles.content} align-self-center col-md-2 col-lg-4 text-center`}>
+//                         <LinksBox/>
+//                         <WhiteSpace height="200px"/>
+//                         <CallBox/>
+//                     </motion.div>
+
+
 
 //                 </motion.div>
 
-//                 {
+//                 {/* {
 //                     morePosts.length > 0 ? (
 //                         <div className={styles.morePosts} ref={morePostsRef} >
 
@@ -90,7 +120,7 @@
 
 //                         </div>
 //                     ) : ""
-//                 }
+//                 } */}
 
 
 //             </motion.div>

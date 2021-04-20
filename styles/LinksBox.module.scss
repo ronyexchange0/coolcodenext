@@ -1,0 +1,57 @@
+@import "./Theme.module.scss";
+
+.linksBox {
+    text-align: left;
+
+    .head {
+        padding: 20px 40px;
+        border: 10px solid;
+        border-width: 1px;
+        border-image-source: $main-color;
+        border-image-slice: 1;
+        border-bottom: none;
+
+        span {
+            font-family: $main-font;
+            font-weight: bold;
+            font-size: $f-md;
+            letter-spacing: 0.135em;
+            color: $secondary-color;
+            display: inline-block;
+        }
+    }
+
+    .body {
+        padding: 40px 20px 40px 40px;
+        border: 10px solid;
+        border-width: 1px;
+        border-image-source: $main-color;
+        border-image-slice: 1;
+
+        li {
+            margin-bottom: $s-xs;
+            list-style: none;
+		    position: relative;
+
+            a {
+                font-family: $main-font;
+                letter-spacing: 0.135em;
+                color: $secondary-color;
+                font-size: $f-xxs;
+                letter-spacing: 0.135em;
+                text-decoration-line: underline;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -24px;
+                top: 9px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: $main-color;
+            }
+        }
+    }
+}
