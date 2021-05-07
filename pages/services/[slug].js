@@ -52,7 +52,7 @@ const ServicePage = ({service}) => {
                 initial="initial" 
                 animate={contentAnimation} 
                 ref={contentRef} 
-                className="row justify-content-center"
+                className="row justify-content-center "
                 >
 
                     <motion.div variants={fadeUp(1)} className={`${styles.content} col-md-10 col-lg-8 text-center`}>
