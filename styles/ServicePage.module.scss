@@ -7,6 +7,21 @@
         margin-top: $s-xl;
         margin-bottom: $s-xl;
 
+        h1 {
+            margin-bottom: 0;
+            color: $secondary-color;
+            font-family: $main-font;
+            font-size: $f-lg;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-align: left;
+            width: fit-content;
+            margin-bottom: 20px;
+            @media (max-width: $md) {
+                font-size: $f-md;
+            }
+        }
+
         h2 {
             margin-bottom: 0;
             color: $secondary-color;

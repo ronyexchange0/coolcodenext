@@ -27,9 +27,10 @@ const AboutUs = () => {
     return (
         <main>
             <Meta
-            title="About us Cool Cafe" 
-            keywords="our mission, about us, cool cafe, digital marketing agency, seo, web design"
-            description="get to know more about cool cafe and its mission and how we help your coffee shop to grow and get more customers."
+            title="About us" 
+            keywords="our mission, about us, CoolCode, digital marketing agency, seo, web design"
+            description="get to know more about CoolCode and its mission and how we help your business to grow and get more customers."
+            link="/about-us"
             />
 
             <Loader/>

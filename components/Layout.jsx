@@ -13,7 +13,7 @@ const Layout = ({ children, router }) => {
                 <link rel="shortcut icon" type="image/svg" href="/assets/logo.svg"/>
             </Head>
 
-            {/* <LoaderOnce />  */}
+            <LoaderOnce /> 
             
             <div className="app">
                 <AnimatePresence  exitBeforeEnter>

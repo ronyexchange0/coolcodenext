@@ -19,9 +19,10 @@ const ServicesPage = ({services}) => {
     return (
         <main>
             <Meta 
-            title="Cool Cafe services"
-            description="get more custoemrs for your coffee shop with our services such as web design, seo, data and insights and much more services that guarantee your coffee shop success."
+            title="CoolCode services"
+            description="get more custoemrs for your business with our services such as web design, seo, data and insights and much more services that guarantee your business success."
             keywords="seo, social media marketing, digital marketing, coffee shop marketing, coffee shop app, coffee shop content"
+            link="/services"
             />
 
             <Loader/>

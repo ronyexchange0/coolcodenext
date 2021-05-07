@@ -34,6 +34,7 @@ const BookCall = () => {
             variants={fadeUp(.3)}
             className={styles.logo}>
                 <Image
+                alt="CoolCode logo"
                 src="/assets/logo.svg"
                 width={300}
                 height={300}
@@ -41,7 +42,7 @@ const BookCall = () => {
             </motion.div>
             <div className={styles.content}>
                 <SplitText delay={.5}>See How CoolCode Can Get You More Customers</SplitText>
-                <CustomButton variants={fadeUp(.5)}>Book A Call</CustomButton>
+                <CustomButton link={"/contact"} variants={fadeUp(.5)}>Book A Call</CustomButton>
             </div>
         </motion.div>
     )

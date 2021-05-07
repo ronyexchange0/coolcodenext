@@ -1,37 +1,45 @@
-// import { motion } from "framer-motion"
-// import Loader from "../components/Loader"
-// import Posts from "../components/Posts"
-// import { getArticles } from "../utils"
+import Loader from "../components/Loader"
 
-// export const getStaticProps = async () => {
+import Meta from "../components/Meta"
+import Posts from "../components/Posts"
+import { motion } from "framer-motion"
+import { getArticles } from "../utils"
 
-//     const posts = await getArticles(6)
+export const getStaticProps = async () => {
 
-//     return {
-//         props: {posts},
-//         revalidate: 10,
-//     }
-// }
+    const posts = await getArticles(6)
 
-// const blogPage = ({posts}) => {
-//     return (
-//         <main>
-//             <Loader/>
-//             <motion.div exit={{opacity: 0}}>
-//                 <Posts posts={posts} />
-//             </motion.div>
-//         </main>
-//     )
-// }
+    return {
+        props: {posts},
+        revalidate: 10,
+    }
+}
 
-// export default blogPage
-
-const Blog = () => {
+const blogPage = ({posts}) => {
     return (
-        <div>
-            TRY LATER
-        </div>
+        <main>
+            <Meta
+            title="Blog - CoolCode digital marketing agency" 
+            keywords="blog, marketing blog, seo blog, digital marketing agency, seo, web design"
+            description="learn how to grow your business and get more customers with the help of seo, social media marketing and web design."
+            link="/blog"
+            />
+            <Loader/>
+            <motion.div exit={{opacity: 0}}>
+                <Posts posts={posts} />
+            </motion.div>
+        </main>
     )
 }
 
-export default Blog
+export default blogPage
+
+// const Blog = () => {
+//     return (
+//         <div>
+//             TRY LATER
+//         </div>
+//     )
+// }
+
+// export default Blog

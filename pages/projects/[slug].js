@@ -14,7 +14,7 @@ import styles from "../../styles/Project.module.scss";
 const Post = ({project}) => {
 
     //data
-    const {title, image: {url}, content, projectSection, work} = project
+    const {title, image: {url}, content, projectSection, work, meta: {metaDescription, tags}, slug} = project
     const {title: titleM, content: contentM, image: {url: urlM}} = projectSection[0]
     const {title: titlePC, content: contentPC, image: {url: urlPC}} = projectSection[1]
 
@@ -69,7 +69,10 @@ const Post = ({project}) => {
         <main className={styles.projectPage}>
             <Meta
             title={title}
-            description={content}
+            description={metaDescription}
+            keywords={tags}
+            link={`/projects/${slug}`}
+            image={url}
             />
             <Loader/>
 
@@ -110,6 +113,7 @@ const Post = ({project}) => {
 
                                     <motion.div  variants={fadeUp(idx * 0.2)} className={styles.imgWrapper}  >
                                         <Image
+                                        alt={title}
                                         src={icon.url}
                                         width={100}
                                         height={100}
@@ -139,6 +143,7 @@ const Post = ({project}) => {
                           
                                 <div className={styles.webWrapper}>
                                     <Image
+                                    alt={`${title} on desktop`}
                                     src={urlM}
                                     width={600}
                                     height={400}
@@ -188,6 +193,7 @@ const Post = ({project}) => {
 
                                 <div className={styles.webWrapper}>
                                     <Image
+                                    alt={`${title} on mobile phones`}
                                     src={urlPC}
                                     width={600}
                                     height={780}

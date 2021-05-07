@@ -16,12 +16,14 @@ const ProjectsList = () => {
         {
             name: "Fashion du jour",
             slug: "fashion-du-jour",
+            alt: "fashion du jour project pricture",
             photos: ["/assets/projects/fashion-du-jour/00.png", "/assets/projects/fashion-du-jour/01.png", "/assets/projects/fashion-du-jour/05.png", "/assets/projects/fashion-du-jour/02.png"],
             height: "300px"
         },
         {
             name: "Marek pluhar",
             slug: "marek-pluhar",
+            alt: "Marek Pluhar project pricture",
             photos: ["/assets/projects/marek-pluhar/00.png", "/assets/projects/marek-pluhar/01.png", "/assets/projects/marek-pluhar/02.png", "/assets/projects/marek-pluhar/03.png"],
             height: "500px"
 
@@ -29,12 +31,14 @@ const ProjectsList = () => {
         {
             name: "martin podlesak",
             slug: "martin-podlesak",
+            alt: "Martin Podlesak project pricture",
             photos: ["/assets/projects/martin-podlesak/00.png", "/assets/projects/martin-podlesak/01.png", "/assets/projects/martin-podlesak/03.jpg", "/assets/projects/martin-podlesak/02.png"],
             height: "500px"
         },
         {
             name: "Auto no limit",
             slug: "auto-no-limit",
+            alt: "Auto No Limit project pricture",
             photos: ["/assets/projects/auto-no-limit/00.png", "/assets/projects/auto-no-limit/01.png", "/assets/projects/auto-no-limit/03.png", "/assets/projects/auto-no-limit/02.png"],
             height: "300px"
         },
@@ -101,7 +105,7 @@ const ProjectsList = () => {
                                     <div>
                                         <Image 
                                             src={content[i].photos[0]}
-                                            alt="test"
+                                            alt={content[i].alt}
                                             width={500}
                                             height={300}
                                             layout="responsive"
@@ -127,7 +131,7 @@ const ProjectsList = () => {
                             <div>
                                 <Image 
                                     src={content[i].photos[1]}
-                                    alt="test"
+                                    alt={content[i].alt}
                                     layout="fill"
                                     objectFit="cover"
                                     objectPosition="top"
@@ -151,7 +155,7 @@ const ProjectsList = () => {
                                     <div>
                                         <Image 
                                             src={content[i].photos[2]}
-                                            alt="test"
+                                            alt={content[i].alt}
                                             layout="fill"
                                             objectFit="cover"
                                             objectPosition="top"
@@ -177,7 +181,7 @@ const ProjectsList = () => {
                             <div>
                                 <Image 
                                     src={content[i].photos[3]}
-                                    alt="test"
+                                    alt={content[i].alt}
                                     layout="fill"
                                     objectFit="cover"
                                 />

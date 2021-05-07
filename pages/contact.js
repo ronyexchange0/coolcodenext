@@ -13,8 +13,9 @@ const Contact = () => {
         <main className={styles.contact}>
             <Meta
             title="Book a free strategy session"
-            description="Book a free strategy session with us to analyze your current situation and help you to create a business plan for your coffee shop."
-            keywords="free strategy session, free coffee shop strategy, coffee shop business plan"
+            description="Book a free strategy session with us to analyze your current situation and help you to create a business plan for your business"
+            keywords="free strategy session, free marketing, business plan"
+            link="/contact"
             />
 
             <Loader/>

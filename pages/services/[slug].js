@@ -27,13 +27,16 @@ const ServicePage = ({service}) => {
     }, [contentAnimation, contentInView])
 
 
-    const {title, image: {url}, content, description} = service
+    const {title, image: {url}, content, description, meta: {metaDescription, tags}, slug} = service
 
     return (
         <main className={styles.servicePage}>
             <Meta
             title={title}
-            description={description}
+            description={metaDescription}
+            keywords={tags}
+            link={`/services/${slug}`}
+            image={url}
             />
             
             <Loader/>

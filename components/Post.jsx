@@ -14,7 +14,7 @@ import headingStyles from "../styles/HeadingLayout.module.scss";
 
 const Post = ({children, title, image, slug, isOdd, idx}) => {
     
-    const thumb = image.url
+    // const thumb = image.url
 
     const animation = useAnimation()
     const [postRef, inView] = useInView({
@@ -34,7 +34,7 @@ const Post = ({children, title, image, slug, isOdd, idx}) => {
             <HeadingLayout 
             isLeft={isOdd && true} 
             num={`0${idx + 1}`} 
-            image={thumb} 
+            image={"/assets/images.png"} 
             className={`d-lg-none ${headingStyles.headingLayout}`} 
             title={title} 
             link={`/post/${slug}`}
@@ -104,7 +104,7 @@ const Post = ({children, title, image, slug, isOdd, idx}) => {
                                         <motion.div className={styles.cover} variants={coverSlideUp(0, 2.5)}></motion.div>
                                         <motion.div>
                                             <Image 
-                                                src={thumb}
+                                                src={"/assets/images.png"}
                                                 alt={title}
                                                 width={395}
                                                 height={482}
