@@ -21,11 +21,18 @@ const ProjectsList = () => {
             height: "300px"
         },
         {
+            name: "Podlahy Kral",
+            slug: "podlahy-kral",
+            alt: "Podlahy kral project pricture",
+            photos: ["/assets/projects/podlahy-kral/00.png", "/assets/projects/podlahy-kral/03.png", "/assets/projects/podlahy-kral/01.png", "/assets/projects/podlahy-kral/02.png"],
+            height: "300px"
+        },
+        {
             name: "Marek pluhar",
             slug: "marek-pluhar",
             alt: "Marek Pluhar project pricture",
-            photos: ["/assets/projects/marek-pluhar/00.png", "/assets/projects/marek-pluhar/01.png", "/assets/projects/marek-pluhar/02.png", "/assets/projects/marek-pluhar/03.png"],
-            height: "500px"
+            photos: ["/assets/projects/marek-pluhar/00.png", "/assets/projects/marek-pluhar/02.png", "/assets/projects/marek-pluhar/01.png",  "/assets/projects/marek-pluhar/03.png"],
+            height: "300px"
 
         },
         {

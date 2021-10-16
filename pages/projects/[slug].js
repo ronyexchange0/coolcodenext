@@ -11,7 +11,7 @@ import { fadeUp, textSlideUp, fadeLeft } from "../../animations";
 
 import styles from "../../styles/Project.module.scss";
 
-const Post = ({project}) => {
+const Project = ({project}) => {
 
     //data
     const {title, image: {url}, content, projectSection, work, meta: {metaDescription, tags}, slug} = project
@@ -220,7 +220,7 @@ const Post = ({project}) => {
     )
 }
 
-export default Post
+export default Project
 
 export const getStaticPaths = async () => {
     const projects = await getProjects()

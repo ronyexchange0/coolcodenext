@@ -38,6 +38,11 @@ const ServicesList = ({services}) => {
                 text: "Let's create engaging content that attracts and interests your audience. <br/> We can create a blog and add new articles to your coffee shop website and create posts and manage your social media accounts.",
                 link: "/services/content-marketing"
             },
+            {
+                title: "Photography",
+                text: "After 2 years of specializing in photography, our team's able to take your website and social media to the next level by taking professional pictures of your business.",
+                link: "/services/photography"
+            },
         ]
     )
 

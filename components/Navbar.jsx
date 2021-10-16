@@ -84,7 +84,7 @@ const Navbar = () => {
                                     </Link>
                                 </motion.li>
 
-                                <motion.li 
+                                {/* <motion.li 
                                     className="overflow-hidden"
                                     variants={menuItemsAnime()}
                                 >
@@ -93,7 +93,7 @@ const Navbar = () => {
                                             Blog
                                         </a>
                                     </Link>
-                                </motion.li>
+                                </motion.li> */}
 
                                 <motion.li 
                                     className="overflow-hidden"
@@ -178,7 +178,7 @@ const Navbar = () => {
                                 </Link>
                             </motion.li>
 
-                            <motion.li 
+                            {/* <motion.li 
                             initial="initial"
                             animate="animate"
                             variants={textSlideUp(1.4, .5, "easeInOut")}
@@ -186,7 +186,7 @@ const Navbar = () => {
                                 <Link href="/blog">
                                     <a className="d-inline-block" >Blog</a>
                                 </Link>
-                            </motion.li>
+                            </motion.li> */}
 
                             <motion.li 
                             variants={textSlideUp(1.6, .5, "easeInOut")} 

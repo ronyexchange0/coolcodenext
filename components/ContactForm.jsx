@@ -65,23 +65,23 @@ const ContactForm = () => {
 
 
                         <div className="col-md-6">
-                            <CustomInput name="name" type="text" delay={1} placeholder="Full Name" required />
+                            <CustomInput name="name" type="text" delay={1} placeholder="Full name" required />
                         </div>
 
                         <div className="col-md-6">
-                            <CustomInput name="coffee-shop" type="text" delay={1.1} placeholder="coffee shop name" required/>
+                            <CustomInput name="coffee-shop" type="text" delay={1.1} placeholder="Business name" required/>
                         </div>
 
                         <div className="col-md-6">
-                            <CustomInput name="phone" type="text" delay={1.2} placeholder="phone number" required/>
+                            <CustomInput name="phone" type="text" delay={1.2} placeholder="Phone number" required/>
                         </div>
 
                         <div className="col-md-6">
-                            <CustomInput name="email" type="text" delay={1.3} placeholder="e-mail" required />
+                            <CustomInput name="email" type="text" delay={1.3} placeholder="E-mail" required />
                         </div>
 
                         <div className="col-md-6">
-                            <CustomInput name="subject" type="text" delay={1.4} placeholder="subject" required/>
+                            <CustomInput name="subject" type="text" delay={1.4} placeholder="Subject" required/>
                         </div>
 
                         <div className="col-md-6">
